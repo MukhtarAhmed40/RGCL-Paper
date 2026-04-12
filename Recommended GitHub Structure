@@ -1,0 +1,28 @@
+RGCL/
+│── README.md
+│── requirements.txt
+│── train.py
+│── evaluate.py
+│── attack_eval.py
+│── preprocess.py
+│── reproduce_results.py
+│
+├── configs/
+│   └── default.yaml
+│
+├── models/
+│   ├── ega_layer.py
+│   ├── encoder.py
+│   ├── contrastive.py
+│   └── rgcl_model.py
+│
+├── utils/
+│   ├── data_utils.py
+│   ├── metrics.py
+│   └── graph_utils.py
+│
+├── data/
+│   └── sample_dataset.csv
+│
+└── scripts/
+    └── run_all.sh
