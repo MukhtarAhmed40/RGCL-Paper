@@ -1,0 +1,11 @@
+Download the following datasets:
+
+CICIDS-2018
+
+CIC-Darknet2020
+
+CICIoT2023
+
+UNSW-NB15
+
+Place them in data/raw/ directory.
