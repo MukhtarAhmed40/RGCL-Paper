@@ -1,0 +1,24 @@
+RGCL/
+├── README.md
+├── requirements.txt
+├── setup.py
+├── config/
+│   └── default.yaml
+├── data/
+│   ├── __init__.py
+│   ├── dataset.py
+│   └── preprocessing.py
+├── models/
+│   ├── __init__.py
+│   ├── ega.py
+│   ├── encoder.py
+│   ├── contrastive.py
+│   └── rgcl.py
+├── utils/
+│   ├── __init__.py
+│   ├── metrics.py
+│   ├── adversarial.py
+│   └── helpers.py
+├── train.py
+├── evaluate.py
+└── run_experiments.py
