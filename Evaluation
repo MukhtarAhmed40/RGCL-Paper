@@ -1,0 +1,1 @@
+python evaluate.py --model checkpoints/best_model.pt --dataset CICIDS-2018
