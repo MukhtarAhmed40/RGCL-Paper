@@ -1,13 +1,31 @@
-lr: 0.001
-batch_size: 64
-epochs: 50
-dropout: 0.5
-tau: 0.2
-lambda: 0.8
-epsilon: 0.15
-hidden_dim: 128
-heads: 8
-alpha: 0.6
-beta: 0.4
-gamma: 0.05
-eta: 0.5
+model:
+  hidden_dim: 128
+  num_heads: 8
+  num_layers: 3
+  dropout: 0.5
+  temperature: 0.2
+  
+training:
+  epochs: 100
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 5e-4
+  
+dynamic_graph:
+  aging_factor: 0.8
+  update_frequency: 10
+  
+adversarial:
+  epsilon: 0.15
+  attack_type: "both"  # structural, feature, both
+  
+contrastive:
+  local_weight: 1.0
+  global_weight: 1.0
+  div_weight: 0.1
+  
+data:
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  temporal_window: 60  # seconds
